@@ -1,0 +1,160 @@
+
+
+.body{
+    font-family: "Alexandria", serif;
+
+}
+a{
+    text-decoration: none;
+}
+.custom-navbar {
+    background-image: url("/assest/img/1457718455276 1.svg"), linear-gradient(to right, #6873C6, #35BCB5);
+    border-radius: 0 0 50px 50px ;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.custom-navbar img {
+    width: 100px; 
+}
+
+.card-container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+}
+
+.service-button {
+    display: block;
+    width: 100%;
+    padding: 30px;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(to right, #6873C6, #35BCB5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.service-button:hover {
+    opacity: 0.8;
+}
+
+
+/* creatAcount */
+.create-navbar {
+    background-image: url("/assest/img/1457718455276 1.svg"), linear-gradient(to right, #6873C6, #35BCB5);
+    border-radius: 0 0 50px 50px ;
+    padding: 40px 0 40px 0;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.create-navbar img {
+    width: 100px; 
+}
+
+
+.create-container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+
+.create-card {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gradient-btn {
+    background: linear-gradient(to right,  #6873C6, #35BCB5);
+    color: white;
+    border: none;
+    border-radius:20px;
+}
+
+@media(max-width:425px){
+    .create-navbar img {
+        width: 60px; 
+    }
+
+    .create-container {
+        width: 300px;
+    }
+
+    .account{
+        font-size: 12px;
+    }
+
+    .create-singin{
+        font-size: 14px;
+
+    }   
+    
+}
+
+/* datarecording */
+.card-datarecording {
+    background: white;
+    border-radius:20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+}
+
+.bg-btn{
+    
+        background: linear-gradient(to right,  #6873C6, #35BCB5);
+        color: white;
+        border: none;
+        border-radius:10px;
+}
+
+/* main Page */
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: #333;
+    margin-left: 10px; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon-circle:hover {
+    background-color: #ddd;
+}
+
+.active{
+    color: #6873C6 !important;
+
+}
+
+.custom-footer {
+    background-image: url("/assest/img/1457718455276 1.svg"), linear-gradient(to right, #6873C6, #35BCB5);
+    border-radius: 50px 50px 0 0  ;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
