@@ -56,6 +56,21 @@
             color: #333;
             font-weight: bold;
         }
+        .hide{
+            display: none;
+            margin: 0 auto;
+        }
+        .custom-card:hover .hide{
+            display: block;
+            
+        }
+        .custom-card:hover .img1{
+            display: none;
+        }
+        .custom-card:hover .name{
+            color: #fff;
+        }
+        
         
 
     </style>
@@ -73,13 +88,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mx-auto">
                     <li class="nav-item ">
-                      <a class="nav-link mx-2 active" href="#">الرئيسية</a>
+                      <a class="nav-link mx-2 active" href="mainpageService.html">الرئيسية</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link mx-2" href="#">الطلبات</a>
+                      <a class="nav-link mx-2" href="orderservices.html">الطلبات</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link mx-2" href="#">حول المنصة</a>
+                      <a class="nav-link mx-2" href="aboutus.html">حول المنصة</a>
                     </li>
              
                   </ul>
@@ -98,24 +113,27 @@
         <section>
             <div class="container mt-5 ">
                 <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-2">
                         <div class="custom-card p-4">
-                            <img src="assest/img/Group 1410103811.svg" alt="حالة الطلبات">
-                            <h5>طلبات صادرة</h5>
+                            <img class="img1" src="assest/img/Vector (4).svg" alt="حالة الطلبات">
+                            <img class="hide" src="assest/img/Vector (5).svg" alt="حالة الطلبات">
+                            <h5 class="name">طلبات صادرة</h5>
                         </div>
 
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-2">
                         <div class="custom-card p-4">
-                            <img src="assest/img/Group 1410103811.svg" alt="حالة الطلبات">
-                            <h5>طلباتي</h5>
+                            <img class="img1" src="assest/img/Vector (2).svg" alt="حالة الطلبات">
+                            <img class="hide" src="assest/img/Vector (3).svg" alt="حالة الطلبات">
+                            <h5 class="name">طلباتي</h5>
                         </div>
 
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-2">
                         <div class="custom-card p-4">
-                            <img src="assest/img/Group 1410103811.svg" alt="حالة الطلبات">
-                            <h5>تقييمي</h5>
+                            <img class="img1"  src="assest/img/Group 1410103801.svg" alt="حالة الطلبات">
+                            <img class="hide" src="assest/img/Group 1410103801 (1).svg" alt="حالة الطلبات">
+                            <h5 class="name">حالة الطلبات</h5>
                         </div>
 
                     </div>

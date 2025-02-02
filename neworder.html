@@ -23,6 +23,33 @@
             color: #6873c6 !important;  
 
         }
+
+        .custom-btn {
+    border: 1px solid #74a6d4;
+    color: #74a6d4;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.custom-btn:hover {
+    background: #74a6d4;
+    color: white;
+}
+
+.custom-file-input {
+    width: 80%;
+    height: 40px;
+    border: 2px dashed #74a6d4;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color: #b0b0b0;
+    font-size: 14px;
+}
+
     </style>
 </head>
 <body>
@@ -37,13 +64,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item ">
-                  <a class="nav-link mx-2 active" href="#">الرئيسية</a>
+                  <a class="nav-link mx-2 active" href="mainpage.html">الرئيسية</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-2" href="#">الطلبات</a>
+                  <a class="nav-link mx-2" href="statusOrders.html">الطلبات</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-2" href="#">حول المنصة</a>
+                  <a class="nav-link mx-2" href="aboutus.html">حول المنصة</a>
                 </li>
          
               </ul>
@@ -128,7 +155,15 @@
 
                     <div class="col-md-4 col-lg-4 col-sm-12">
                         <label style="display: block;" class="my-1" for="omer">إرفاق المستندات الداعمة</label>
-                        <input type="file" class="form-control">               
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="custom-file-input">
+                                <input type="file" id="file-upload">
+                               
+                            </div>
+                            <label for="file-upload" class="btn custom-btn">إضافة</label>
+
+                        </div>
+                                      
                       </div>
                 
                   
