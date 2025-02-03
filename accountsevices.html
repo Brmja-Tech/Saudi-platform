@@ -35,6 +35,26 @@
     color: #b0b0b0;
     font-size: 14px;
 }
+.custom-file-input input {
+    width: 80%;
+
+}
+
+.dropdown-menu {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(to right, #6873C6, #35BCB5);
+    color: #fff;
+}
+
 
 </style>
 <body>
@@ -54,7 +74,7 @@
             <form >
 
             <div class="card-datarecording">
-                <h6>المعلومات الاساسية</h6>
+                <h4 class="py-2">المعلومات الاساسية</h4>
                 <div class="row justify-content-center align-items-center p-1">
                     <div class="col-md-4 col-lg-4 col-sm-12">
                         <label style="display: block;" class="my-1" for="name">اسم المكتب</label>
@@ -66,8 +86,8 @@
                     </div>
                   
                     <div class="col-md-4 col-lg-4 col-sm-12">
-                        <label style="display: block;" class="my-1" for="email">رقم التواصل</label>
-                        <input type="text" class="form-control" placeholder="+9665085858585" id="email" name="">
+                        <label style="display: block;" class="my-1" >رقم التواصل</label>
+                        <input type="text" class="form-control" placeholder="+9665085858585"  name="">
                     </div>
                   
                    
@@ -75,61 +95,82 @@
                 <div class="row justify-content-center align-items-center p-1">
 
                     <div class="col-md-4 col-lg-4 col-sm-12">
-                        <label style="display: block;" class="my-1" for="customer">التخصص</label>
-                        <select name="" id="customer"  class="form-select" >
-                            <option selected>-- اختر من الخيارات --</option>
-
-                                <option value="">فرد</option>
-                                <option value="">شركة</option>
-                                <option value="">مؤسسة حكومية</option>
-                        </select>                 
-                      </div>
+                        <label style="display: block;" class="my-1">التخصص</label>
+                        <div class="dropdown custom-dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                -- اختر من الخيارات --
+                            </button>
+                            <ul class="dropdown-menu w-100">
+                                <li><a class="dropdown-item" data-value="فرد">فرد</a></li>
+                                <li><a class="dropdown-item" data-value="شركة">شركة</a></li>
+                                <li><a class="dropdown-item" data-value="مؤسسة حكومية">مؤسسة حكومية</a></li>
+                            </ul>
+                          
+                        </div>
+                    </div>
+                    
                    
                     <div class="col-md-4 col-lg-4 col-sm-12">
-                        <label style="display: block;" class="my-1" for="email">رقم الهوية الوطنية</label>
-                        <input type="text" class="form-control" placeholder="11-22-33-44-55" id="email" name="">
+                        <label style="display: block;" class="my-1" >رقم الهوية الوطنية</label>
+                        <input type="text" class="form-control" placeholder="11-22-33-44-55"  name="">
                     </div>
                   
                     <div class="col-md-4 col-lg-4 col-sm-12">
-                        <label style="display: block;" class="my-1" for="email">السجل التجاري</label>
-                        <input type="text" class="form-control" placeholder="11-22-33-44-55" id="email" name="">
+                        <label style="display: block;" class="my-1" >السجل التجاري</label>
+                        <input type="text" class="form-control" placeholder="11-22-33-44-55"  name="">
                     </div>
                   
                 </div>
                 <div class="row  p-1">
                     <div class="col-md-12 col-lg-12 col-sm-12">
-                        <label style="display: block;" class="my-1" for="location">الموقع الجغرافي</label>
-                        <input type="text" class="form-control" placeholder="المدينة / الدولة / الحي" id="location" name="">
+                        <label style="display: block;" class="my-1" >الموقع الجغرافي</label>
+                        <input type="text" class="form-control" placeholder="المدينة / الدولة / الحي"  name="">
                     </div>
                 </div>
 
-                <div class="row  align-items-center p-1 mt-4 mb-3">
+                <div class="row  justify-content-center align-items-center p-1 mt-4 mb-3">
                         <h4>بيانات التخصص والخبرة</h4>
                         <div class="col-md-4 col-lg-4 col-sm-12">
-                            <label style="display: block;" class="my-1" for="asd">عدد سنوات الخبرة</label>
-                            <input type="text" class="form-control" placeholder="5" id="asd" name="">
+                            <label style="display: block;" class="my-1">مجال الخدمة المقدمة</label>
+                            <div class="dropdown custom-dropdown">
+                                <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    -- اختر من الخيارات --
+                                </button>
+                                <ul class="dropdown-menu w-100">
+                                    <li><a class="dropdown-item" data-value="تحويل بنكي">تحويل بنكي</a></li>
+                                    <li><a class="dropdown-item" data-value="بطاقات">بطاقات</a></li>
+                                    <li><a class="dropdown-item" data-value="محافظ إلكترونية">محافظ إلكترونية</a></li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-12">
+                            <label style="display: block;" class="my-1" >عدد سنوات الخبرة</label>
+                            <input type="text" class="form-control" placeholder="5"  name="">
                         </div>
                       
                         <div class="col-md-4 col-lg-4 col-sm-12">
-                            <label style="display: block;" class="my-1" for="ema"> الجهات المعتمدة لدى مقدم الخدمة <span style="color: #35BCB5;">*إن وجدت*</span></label>
-                            <input type="text" class="form-control" placeholder="11" id="ema" name="">
+                            <label style="display: block;" class="my-1" > الجهات المعتمدة لدى مقدم الخدمة <span style="color: #35BCB5;">*إن وجدت*</span></label>
+                            <input type="text" class="form-control" placeholder="11"  name="">
                         </div>
+                        
+                        
                    
                 </div>
-                <div class="row justify-content-center align-items-center p-1 mt-4 mb-3">
+                <div class="row justify-content-center align-items-center p-1">
                     <div class="col-md-8 col-lg-8 col-sm-12">
-                        <label style="display: block;" class="my-1" for="dic"> نبذة عن الخبرات السابقة والمشاريع المنجزة</label>
-                        <textarea name="" id="" style="width: 100%;"></textarea>
+                        <label style="display: block;" class="my-1" > نبذة عن الخبرات السابقة والمشاريع المنجزة</label>
+                        <textarea name="" id="" style="width: 100%;" class="mt-2"></textarea>
                     </div>
 
                     <div class="col-md-4 col-lg-4 col-sm-12">
-                        <label style="display: block;" class="my-1" for="o">إرفاق المستندات الداعمة</label>
+                        <label style="display: block;" class="my-1" >إرفاق المستندات الداعمة</label>
                         <div class="d-flex align-items-center gap-2">
                             <div class="custom-file-input">
-                                <input type="file" id="o">
+                                <input type="file" id="doc-upload">
                              
                             </div>
-                            <label for="file-upload" class="btn custom-btn">إضافة</label>
+                            <label for="doc-upload" class="btn custom-btn">إضافة</label>
 
                         </div>              
                       </div>
@@ -139,35 +180,35 @@
                 
                     <h4>إرفاق المستندات الداعمة</h4>
                     <div class="col-md-4 col-lg-4 col-sm-12">
-                        <label style="display: block;" class="my-1" for="sss">رخصة مزاولة المهنة</label>
+                        <label style="display: block;" class="my-1">رخصة مزاولة المهنة</label>
                         <div class="d-flex align-items-center gap-2">
                             <div class="custom-file-input">
-                                <input type="file" id="sss">
+                                <input type="file" id="upload">
                                 
                             </div>
-                            <label for="file-upload" class="btn custom-btn">إضافة</label>
+                            <label for="upload" class="btn custom-btn">إضافة</label>
 
                         </div>               
                       </div>
                     <div class="col-md-4 col-lg-4 col-sm-12">
-                        <label style="display: block;" class="my-1" for="aaa">شهادات الاعتماد</label>
+                        <label style="display: block;" class="my-1">شهادات الاعتماد</label>
                         <div class="d-flex align-items-center gap-2">
                             <div class="custom-file-input">
-                                <input type="file" id="aaa">
+                                <input type="file" id="idea">
                                 
                             </div>
-                            <label for="file-upload" class="btn custom-btn">إضافة</label>
+                            <label for="idea" class="btn custom-btn">إضافة</label>
 
                         </div>               
                       </div>
                     <div class="col-md-4 col-lg-4 col-sm-12">
-                        <label style="display: block;" class="my-1" for="bbb">سجل تجاري للشركات</label>
+                        <label style="display: block;" class="my-1">سجل تجاري للشركات</label>
                         <div class="d-flex align-items-center gap-2">
                             <div class="custom-file-input">
-                                <input type="file" id="bbb">
+                                <input type="file" id="data-company">
                                 
                             </div>
-                            <label for="file-upload" class="btn custom-btn">إضافة</label>
+                            <label for="data-company" class="btn custom-btn">إضافة</label>
 
                         </div>              
                       </div>
@@ -182,16 +223,20 @@
                         <input type="text" class="form-control" id="vvv" name="">               
                                     
                       </div>
-                    <div class="col-md-4 col-lg-4 col-sm-12">
+                      <div class="col-md-4 col-lg-4 col-sm-12">
                         <label style="display: block;" class="my-1" for="aaa">طرق الدفع المقبولة</label>
-                        <select name="" id="vvv"  class="form-select" >
-                            <option selected>-- اختر من الخيارات --</option>
-
-                                <option value="">فرد</option>
-                                <option value="">شركة</option>
-                                <option value="">مؤسسة حكومية</option>
-                        </select>                 
-                      </div>
+                        <div class="dropdown custom-dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                -- اختر من الخيارات --
+                            </button>
+                            <ul class="dropdown-menu w-100">
+                                <li><a class="dropdown-item" data-value="كاش">كاش</a></li>
+                                
+                            </ul>
+                            <input type="hidden" class="selected-value">
+                        </div>
+                    </div>
+                    
                     <div class="col-md-4 col-lg-4 col-sm-12">
                         <label style="display: block;" class="my-1" for="bbb">السياسات المالية</label>
                         <input type="text" class="form-control" id="bbb" name="">               
@@ -211,16 +256,20 @@
                         <input type="text" class="form-control" id="www" name="">  
                
                       </div>
-                    <div class="col-md-4 col-lg-4 col-sm-12">
-                        <label style="display: block;" class="my-1" for="qqq">أوقات العمل المتاحة</label>
-                        <select name="" id="qqq"  class="form-select" >
-                            <option selected>-- اختر من الخيارات --</option>
-
-                                <option value="">فرد</option>
-                                <option value="">شركة</option>
-                                <option value="">مؤسسة حكومية</option>
-                        </select>               
-                      </div>
+                      <div class="col-md-4 col-lg-4 col-sm-12">
+                        <label style="display: block;" class="my-1">أوقات العمل المتاحة</label>
+                        <div class="dropdown custom-dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                -- اختر من الخيارات --
+                            </button>
+                            <ul class="dropdown-menu w-100">
+                                <li><a class="dropdown-item" data-value="السبت">السبت</a></li>
+                                <li><a class="dropdown-item" data-value="الاحد">الاحد</a></li>
+                              
+                            </ul>
+                            <input type="hidden" class="selected-value">
+                        </div>
+                    </div>
                    
                 </div>
                 <div class="row align-items-center p-1 mt-4 mb-3">
@@ -277,6 +326,22 @@
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <!-- js -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                document.querySelectorAll(".custom-dropdown").forEach(dropdown => {
+                    dropdown.addEventListener("click", function (event) {
+                        if (event.target.classList.contains("dropdown-item")) {
+                            const selectedText = event.target.getAttribute("data-value");
+                            const button = dropdown.querySelector("button");
+                            const hiddenInput = dropdown.querySelector(".selected-value");
+        
+                            button.textContent = selectedText;
+                            hiddenInput.value = selectedText;
+                        }
+                    });
+                });
+            });
+        </script>
     <script src="js/main.js"></script>
 </body>
 </html>
