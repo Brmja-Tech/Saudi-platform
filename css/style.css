@@ -218,3 +218,8 @@ a{
     }
    
 }
+@media(max-width:768px){
+    .services-text{
+        text-align: center;
+    }
+}
