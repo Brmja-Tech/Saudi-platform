@@ -76,7 +76,7 @@ a{
 
 .create-card {
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 50%;
     transform: translateX(-50%);
 }
